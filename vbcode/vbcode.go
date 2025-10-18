@@ -17,7 +17,7 @@ func VbEncodeNumber(n int) []int {
 func VbEncode(numbers []int) [][]int {
 	bytestreams := [][]int{}
 	for _, n := range numbers {
-		bytes := vbEncodeNumber(n)
+		bytes := VbEncodeNumber(n)
 		bytestreams = append(bytestreams, bytes)
 	}
 	return bytestreams
